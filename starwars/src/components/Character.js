@@ -6,16 +6,16 @@ import axios from 'axios';
 
 const Character = (props) => {
 
-    const [char, setChar] = useState([]);
+    const [character, setCharacter] = useState([]);
     axios
         .get('https://rickandmortyapi.com/api/character/')
         .then(res => {
-            setChar(res.data.results);  
+            setCharacter(res.data.results);  
         })
     .catch(err => console.error('an error occurred between '
     + 'lines 10 and 12 of Character.js',err));
 
-    const mapItem = char.map(item => {
+    const mapItem = character.map(item => {
         return (
             <div>
                 <Card body className="card">

@@ -14,23 +14,24 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  color: #F5FFFA;
+  color: #ADFF2F;
 }
 
 .img-border {
-  border: 3px solid black;
+  border: 3px solid #00FA9A;
   max-width: 20vw;
   margin: 0 5vw;
   border-radius: 50%;
 }
 
 .card-title {
+  color: #32CD32;
   font-weight: bold;
   font-size: 5vh;
   margin: 3vh 0;
 }
 
 .text-divider {
-  border-bottom: 2px dotted black;
+  border-bottom: 2px dotted #00FA9A;
   padding-bottom: 6vh;
 }
