@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Card, CardTitle, CardImg, CardText} from 'reactstrap';
 import axios from 'axios';
 
@@ -7,13 +7,16 @@ import axios from 'axios';
 const Character = (props) => {
 
     const [character, setCharacter] = useState([]);
-    axios
+    useEffect(() => {
+        axios
         .get('https://rickandmortyapi.com/api/character/')
         .then(res => {
             setCharacter(res.data.results);  
         })
     .catch(err => console.error('an error occurred between '
     + 'lines 10 and 12 of Character.js',err));
+    })
+
 
     const mapItem = character.map(item => {
         return (
