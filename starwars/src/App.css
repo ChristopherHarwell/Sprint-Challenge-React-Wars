@@ -10,10 +10,11 @@
 .card {
   border: 3px solid black;
   margin: 2vh 35vw;
-  background-color: #81929a;
+  background-color: #191970;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  color: #F5FFFA;
 }
 
 .img-border {
