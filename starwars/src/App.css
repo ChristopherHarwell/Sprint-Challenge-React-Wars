@@ -6,3 +6,30 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.card {
+  border: 3px solid black;
+  margin: 2vh 35vw;
+  background-color: #81929a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.img-border {
+  border: 3px solid black;
+  max-width: 20vw;
+  margin: 0 5vw;
+  border-radius: 50%;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 5vh;
+  margin: 3vh 0;
+}
+
+.text-divider {
+  border-bottom: 2px dotted black;
+  padding-bottom: 6vh;
+}
