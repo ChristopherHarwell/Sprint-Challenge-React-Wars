@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import {Card, CardTitle, CardImg, CardText} from 'reactstrap';
 import axios from 'axios';
+import FormFilter from './FormFilter';
 
 // Write your Character component here
 
-const Character = () => {
+const Character = (props) => {
 
     const [character, setCharacter] = useState([]);
     useEffect(() => {
@@ -35,7 +36,10 @@ const Character = () => {
         )
     })
     return(
-        <div>{mapItem}</div>
+        <div>
+            <FormFilter filterCharacters={character.name}/>
+            {mapItem}
+        </div>
     )
 }
 
