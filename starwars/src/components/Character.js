@@ -4,7 +4,7 @@ import axios from 'axios';
 
 // Write your Character component here
 
-const Character = (props) => {
+const Character = () => {
 
     const [character, setCharacter] = useState([]);
     useEffect(() => {
